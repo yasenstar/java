@@ -14,12 +14,37 @@ A java program that displays a second line that copies whatever your typed:
 
 ```java
 import java.util.Scanner;
+
 class EchoLine {
+
   public static voic main(String[], args) {
     Scanner keyboard = new Scanner(System.in);
     System.out.println(keyboart.nextLine());
     keyboard.close();
+    
   }
 }
 ```
 
+Another program to read words then line:
+
+```java
+import java.util.Scanner;
+
+public class GetInput {
+
+	public static void main(String[] args) {
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println(keyboard.next());
+		System.out.println(keyboard.next());
+		System.out.println(keyboard.nextLine());
+		
+		keyboard.close();
+
+	}
+ ```
+ 
+
+}
+```
