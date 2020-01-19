@@ -18,7 +18,7 @@ class EchoLine {
   public static voic main(String[], args) {
     Scanner keyboard = new Scanner(System.in);
     System.out.println(keyboart.nextLine());
-    keyboard.close():
+    keyboard.close();
   }
 }
 ```
