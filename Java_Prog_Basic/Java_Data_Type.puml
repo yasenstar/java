@@ -1,0 +1,22 @@
+@startwbs
+* Data Types in Java
+** Primitive
+*** Numeric
+****< Integral
+*****< Integer
+****** byte
+****** short
+****** int
+****** long
+***** Floating-Point
+****** float
+****** double
+**** Character
+***** Char
+***< Boolean
+**** Boolean
+** Non-Primitive (Reference)
+*** String
+*** Array
+*** etc.
+@endwbs

@@ -7,23 +7,171 @@ Java程序设计基础(第6版)
 
 ## 1.2 Java语言的特点
 
+### 1. 简单易学
+
+### 2. 面向对象
+
+### 3. 平台无关性
+
+### 4. 分布式
+
+### 5. 可靠性
+
+### 6. 安全性
+
+### 7. 支持多线程
+ (see:11 多线程)
+### 8. 支持网络编程
+ (see:18 Java网络编程)
+### 9. 编译与解释并存
+ (see:Java程序的运行过程：先编译，后解释)
 ## 1.3 Java语言规范
+
+### Java SE (Java Platform Standard Edition)
+
+### Java ME (Java Platform Micro Edition)
+
+### Java EE (Java Platform Enterprise Edition)
 
 ## 1.4 Java虚拟机
 
+### Java程序的运行过程：先编译，后解释
+
+#### app.java - (compiler) -> app.class (字节码)
+
+#### app.clsss - (interpreter) -> local machine code
+
+### Java的字节码是Java虚拟机(Java Virtual Machine, JVM)的指令组，和CPU上的微指令码相像
+
+### 字节码最大的好处是可跨平台运行，即Java的字节码可以编写一次，到处运行
+
 ## 1.5 Java程序的种类和结构
+
+### Application 应用程序
+
+#### 从命令行运行的程序，可以在Java平台上独立运行
+
+#### Java应用程序是独立完整的程序，在命令行调用独立的解释器软件即可运行
+
+#### 主类中包含有一个定义为
+public static void main(String[] args)的主方法
+
+##### 这个主方法是Java应用程序的标志
+
+##### 同时也是Java应用程序执行的入口点
+
+##### 在应用程序中包含有main()方法的类一定是主类
+
+##### 但主类并不一定要求是public类
+
+### Applet 小程序
+
+#### 嵌入在HTML文档中的Java程序，需要搭配浏览器来运行
+
+### class App1_1
 
 # 02 Java语言开发环境
 
 ## 2.1 Java开发工具
 
+### bin下面的常用命令
+
+#### javac.exe: Java编译器，将Java源代码文件转换成字节码文件
+
+#### java.exe: Java解释器，执行Java程序的字节码文件
+
+#### javadoc.exe：根据Java源代码及注释语句生成Java程序的HTML格式的帮助文档
+
+#### javadoc.exe：根据Java源代码及注释语句生成Java程序的HTML格式的帮助文档
+
+#### jar.exe：创建扩展名为.jar（Java Archive, Java归档）的压缩文件，与zip压缩文件格式相同
+
+#### jmod.exe：创建扩展名为.jmod的压缩文件
+
+#### Note: I'm using Microsoft jdk-21.0.4.7-hotspot, there's no "appletviewer.exe" anymore
+
+### 2.1.1 JDK的下载与安装
+
+#### Microsoft Build of OpenJDK
+
+### 2.1.2 设置JDK的操作环境
+
+#### 系统变量 PATH - C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.372-1\bin
+
+#### Or set system variable for Java_Home
+
+#### set path=C:\Program Files\Java\jdk-10\bin;%path%
+set classpath=%classpath%;.;C:\Program Files\Java\jre-10\lib
+
 ## 2.2 JDK帮助文档下载与安装
+
+### OpenJDK Developers' Guide
+
+### Oracle Java Documentation
 
 ## 2.3 JDK的使用
 
+### class App2_1
+
 # 03 Java语言基础
 
-## 3.1 数据类型
+## 3.1 数据类型 Data Type
+
+### 数据存储在内存的一块空间中，为了取得数据，必须知道这块内存空间的位置，为了方便使用，程序设计语言用变量名来代表该数据存储空间的位置
+
+#### 将数据指定给变量，就是将数据存储到对应的内存空间
+
+#### 调用变量，就是将对应的内存空间中的数据取出来使用
+
+### 由于数据在存储时所需要的内存容量各不相同，不同的数据就必须要分配不同大小的内存空间来存储，因此在Java语言中对不同的数据用不同的数据类型来区分
+
+### Java数据类型分类
+
+#### 基本数据类型 primitive types
+
+##### 由程序设计语言系统所定义、不可再分的数据类型
+
+##### 每种基本数据类型的数据所占内存的大小是固定的，与软硬件环境无关
+
+##### 基本数据类型在内存种存放的是数据值本身
+
+##### 1. 整型：byte, short, int, long
+
+###### 十进制：用多个0~9的数字表示，其首位不能为0
+
+###### 八进制：以0开头，后跟多个0~7的数字
+
+###### 十六进制：以0x或0X开头，后跟多个0~9的数字或a~f的小写字母或A~F的大写字母
+
+###### 一个整数隐含为整型（int型）​。当要将一个整数强制表示为长整数时，需在后面加字母l或L。所以若声明long型变量的值超过int型的取值范围时，如果数的后面不加l或L，系统会认是int型而出错
+
+##### 2. 浮点型：float, double
+
+###### 标准计数法：由整数部分、小数点和小数部分构成
+
+###### 科学计数法：由十进制整数、小数点、小数和指数部分构成，指数部分由字母E或e跟上带正负号的整数表示
+
+###### 一个浮点数隐含为double型。若在一个浮点数后加字母f或F，将其强制转换为float型，所以若声明float型变量时如果数的后面不加f或F，系统会认为是double型而出错。double型占8字节，有效数字最长为15位，之所以称它为double型，是因为它的精度是float型精度的2倍，所以又称为双精度型
+
+##### 3. 布尔型：boolean
+
+###### 布尔型（boolean）也称为逻辑型，用来表示逻辑值。它只有true和false两个取值。其中，true代表“真”​，false代表“假”​，true和false不能转换成数字表示形式
+
+##### 4. 字符型：char
+
+###### 字符型（char）用来存储单个字符
+
+###### Java语言中的字符采用的是Unicode字符集编码方案，在内存中占2字节，是16位无符号的整数，一共有65 536个，字符的取值范围为0～65 535，表示其在Unicode字符集中的排序位置
+
+###### Unicode字符是用“\u0000”到“\uFFFF”之间的十六进制数值来表示的，前缀“\u”表示是一个Unicode值，后面的4个十六进制值表示是哪个Unicode字符。Unicode字符表的前128个字符刚好是ASCII表。每个国家的字母表的字母都是Unicode表中的一个字符。由于Java语言的字符类型采用了Unicode这种新的国际标准编码方案，因而便于中文字符和西文字符的处理
+
+#### 引用数据类型 reference types
+
+##### 简称引用类型
+
+##### 在内存中存放的是指向该数据的地址，不是数据值本身
+
+##### 往往由多个基本数据类型组成，所以对引用数据类型的应用称为对象应用，引用数据类型也被称为复合数据类型，在有的程序设计语言中称为指针
 
 ## 3.2 关键字与标识符
 
