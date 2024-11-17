@@ -1,118 +1,6 @@
  Java Programming Basic
 Java程序设计基础(第6版)
 
-# 01 Java语言概述
-
-## 1.1 Java语言的诞生与发展
-
-## 1.2 Java语言的特点
-
-### 1. 简单易学
-
-### 2. 面向对象
-
-### 3. 平台无关性
-
-### 4. 分布式
-
-### 5. 可靠性
-
-### 6. 安全性
-
-### 7. 支持多线程
- (see:11 多线程)
-### 8. 支持网络编程
- (see:18 Java网络编程)
-### 9. 编译与解释并存
- (see:Java程序的运行过程：先编译，后解释)
-## 1.3 Java语言规范
-
-### Java SE (Java Platform Standard Edition)
-
-### Java ME (Java Platform Micro Edition)
-
-### Java EE (Java Platform Enterprise Edition)
-
-## 1.4 Java虚拟机
-
-### Java程序的运行过程：先编译，后解释
-
-#### app.java - (compiler) -> app.class (字节码)
-
-#### app.clsss - (interpreter) -> local machine code
-
-### Java的字节码是Java虚拟机(Java Virtual Machine, JVM)的指令组，和CPU上的微指令码相像
-
-### 字节码最大的好处是可跨平台运行，即Java的字节码可以编写一次，到处运行
-
-## 1.5 Java程序的种类和结构
-
-### Application 应用程序
-
-#### 从命令行运行的程序，可以在Java平台上独立运行
-
-#### Java应用程序是独立完整的程序，在命令行调用独立的解释器软件即可运行
-
-#### 主类中包含有一个定义为
-public static void main(String[] args)的主方法
-
-##### 这个主方法是Java应用程序的标志
-
-##### 同时也是Java应用程序执行的入口点
-
-##### 在应用程序中包含有main()方法的类一定是主类
-
-##### 但主类并不一定要求是public类
-
-### Applet 小程序
-
-#### 嵌入在HTML文档中的Java程序，需要搭配浏览器来运行
-
-### class App1_1
-
-# 02 Java语言开发环境
-
-## 2.1 Java开发工具
-
-### bin下面的常用命令
-
-#### javac.exe: Java编译器，将Java源代码文件转换成字节码文件
-
-#### java.exe: Java解释器，执行Java程序的字节码文件
-
-#### javadoc.exe：根据Java源代码及注释语句生成Java程序的HTML格式的帮助文档
-
-#### javadoc.exe：根据Java源代码及注释语句生成Java程序的HTML格式的帮助文档
-
-#### jar.exe：创建扩展名为.jar（Java Archive, Java归档）的压缩文件，与zip压缩文件格式相同
-
-#### jmod.exe：创建扩展名为.jmod的压缩文件
-
-#### Note: I'm using Microsoft jdk-21.0.4.7-hotspot, there's no "appletviewer.exe" anymore
-
-### 2.1.1 JDK的下载与安装
-
-#### Microsoft Build of OpenJDK
-
-### 2.1.2 设置JDK的操作环境
-
-#### 系统变量 PATH - C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.372-1\bin
-
-#### Or set system variable for Java_Home
-
-#### set path=C:\Program Files\Java\jdk-10\bin;%path%
-set classpath=%classpath%;.;C:\Program Files\Java\jre-10\lib
-
-## 2.2 JDK帮助文档下载与安装
-
-### OpenJDK Developers' Guide
-
-### Oracle Java Documentation
-
-## 2.3 JDK的使用
-
-### class App2_1
-
 # 03 Java语言基础
 
 ## 3.1 数据类型 Data Type
@@ -227,11 +115,101 @@ set classpath=%classpath%;.;C:\Program Files\Java\jre-10\lib
 
 ## 3.4 变量
 
+### 3.4.1 变量声明
+
+#### 变量四要素：名字、类型、值、作用域
+
+#### 声明格式：类型 变量名 [=初值] [,变量名 [=初值] ...];
+
+#### 在声明变量的同时也可以对其初始化，即赋初值
+
+### 3.4.2 变量的赋值
+
+#### 赋值格式：变量名 = 值;
+
 ## 3.5 数据类型转换
+
+### 3.5.1 数值型不同类型数据的转换
+
+#### 自动类型转换（隐含类型转换）
+
+##### byte->short->char->int->long->float->double
+
+##### 类型的转换只限该语句本身，并不会影响原先变量的类型定义
+
+##### 通过自动类型的转换，可以保证数据的精确度，它不会因为类型转换而损失数据的内容。这种类型的转换方式也称为扩大转换（augmented conversion）​。
+
+##### App3_1 数据类型的自动转换
+
+#### 强制类型转换（显性转换 explicit cast）
+
+##### 格式：(欲转换的数据类型) 变量名
+
+##### App3_2 整型与浮点数据类型的转换
+
+### 3.5.2 字符串型数据与整型数据相互转换
 
 ## 3.6 由键盘输入数据
 
+### 方式1：BufferedReader
+
+#### 3.6.1 输入字符串
+
+##### App3_3 从键盘输入数据
+
+###### IOException
+
+###### InputStreamReader
+
+###### BufferedReader
+
+#### 3.6.2 输入数值
+
+##### App3_4
+
+###### Float.parseFloat(string)
+
+#### 3.6.3 输入多个数据
+
+##### App3_5
+
+### 方式2：Scanner
+
+#### App3_6: 输入多个数据
+
+#### App3_7: 输入字符串
+
 ## 3.7 运算符与表达式
+
+### 3.7.1 算术运算符
+
+#### 二元算术运算符
+
+#### 一元算术运算符
+
+### 3.7.2 关系运算符
+
+### 3.7.3 逻辑运算符
+
+### App3_8: 关系运算符和逻辑运算符的使用
+
+### 3.7.4 位运算符
+
+#### 位运算符的操作数只能为整型或字符型数据
+
+### 3.7.5 赋值运算符
+
+#### 单个赋值运算符
+
+#### 扩展赋值运算符
+
+##### a+=b 等效于 a=a+b
+
+### 3.7.6 三元条件运算符
+
+#### 格式：表达式1?表达式2:表达式3;
+
+#### 实现了if-else语句的功能
 
 # 04 流程控制
 
@@ -240,6 +218,10 @@ set classpath=%classpath%;.;C:\Program Files\Java\jre-10\lib
 ## 4.2 顺序结构
 
 ## 4.3 分支结构
+
+### 4.3.1 if条件语句
+
+#### App_4_1 找出三个整数中的最大值和最小值
 
 ## 4.4 循环结构
 
@@ -306,26 +288,6 @@ set classpath=%classpath%;.;C:\Program Files\Java\jre-10\lib
 ## 9.4 自动关闭资源的try语句
 
 ## 9.5 自定义异常类
-
-# 10 Java语言的输入输出与文件处理
-
-## 10.1 Java语言的输入输出
-
-## 10.2 使用InputStream和OutputStream流类
-
-## 10.3 使用Reader和Writer流类
-
-## 10.4 文件的处理与随机访问
-
-# 11 多线程
-
-## 11.1 线程的概念
-
-## 11.2 Java的Thread线程类与Runnable接口
-
-## 11.3 多线程的同步控制
-
-## 11.4 线程之间的通信
 
 # 12 泛型与容器类
 
@@ -410,3 +372,139 @@ set classpath=%classpath%;.;C:\Program Files\Java\jre-10\lib
 ## 18.2 URL编程
 
 ## 18.3 用Java语言实现底层网络通信
+
+# 01 Java语言概述
+
+## 1.1 Java语言的诞生与发展
+
+## 1.2 Java语言的特点
+
+### 1. 简单易学
+
+### 2. 面向对象
+
+### 3. 平台无关性
+
+### 4. 分布式
+
+### 5. 可靠性
+
+### 6. 安全性
+
+### 7. 支持多线程
+ (see:11 多线程)
+### 8. 支持网络编程
+ (see:18 Java网络编程)
+### 9. 编译与解释并存
+ (see:Java程序的运行过程：先编译，后解释)
+## 1.3 Java语言规范
+
+### Java SE (Java Platform Standard Edition)
+
+### Java ME (Java Platform Micro Edition)
+
+### Java EE (Java Platform Enterprise Edition)
+
+## 1.4 Java虚拟机
+
+### Java程序的运行过程：先编译，后解释
+
+#### app.java - (compiler) -> app.class (字节码)
+
+#### app.clsss - (interpreter) -> local machine code
+
+### Java的字节码是Java虚拟机(Java Virtual Machine, JVM)的指令组，和CPU上的微指令码相像
+
+### 字节码最大的好处是可跨平台运行，即Java的字节码可以编写一次，到处运行
+
+## 1.5 Java程序的种类和结构
+
+### Application 应用程序
+
+#### 从命令行运行的程序，可以在Java平台上独立运行
+
+#### Java应用程序是独立完整的程序，在命令行调用独立的解释器软件即可运行
+
+#### 主类中包含有一个定义为
+public static void main(String[] args)的主方法
+
+##### 这个主方法是Java应用程序的标志
+
+##### 同时也是Java应用程序执行的入口点
+
+##### 在应用程序中包含有main()方法的类一定是主类
+
+##### 但主类并不一定要求是public类
+
+### Applet 小程序
+
+#### 嵌入在HTML文档中的Java程序，需要搭配浏览器来运行
+
+### class App1_1
+
+# 02 Java语言开发环境
+
+## 2.1 Java开发工具
+
+### 2.1.1 JDK的下载与安装
+
+#### Microsoft Build of OpenJDK
+
+#### Oracle JDK
+
+#### OpenJDK.org
+
+#### RedHat OpenJDK
+
+### 2.1.2 设置JDK的操作环境
+
+#### 系统变量 PATH - C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.372-1\bin
+
+#### Or set system variable for Java_Home
+
+#### set path=C:\Program Files\Java\jdk-10\bin;%path%
+set classpath=%classpath%;.;C:\Program Files\Java\jre-10\lib
+
+### bin下面的常用命令
+
+#### javac.exe: Java编译器，将Java源代码文件转换成字节码文件
+
+#### java.exe: Java解释器，执行Java程序的字节码文件
+
+#### javadoc.exe：根据Java源代码及注释语句生成Java程序的HTML格式的帮助文档
+
+#### jar.exe：创建扩展名为.jar（Java Archive, Java归档）的压缩文件，与zip压缩文件格式相同
+
+#### jmod.exe：创建扩展名为.jmod的压缩文件
+
+#### Note: I'm using Microsoft jdk-21.0.4.7-hotspot, there's no "appletviewer.exe" anymore
+
+## 2.2 JDK帮助文档下载与安装
+
+### OpenJDK Developers' Guide
+
+### Oracle Java Documentation
+
+## 2.3 JDK的使用
+
+### class App2_1
+
+# 10 Java语言的输入输出与文件处理
+
+## 10.1 Java语言的输入输出
+
+## 10.2 使用InputStream和OutputStream流类
+
+## 10.3 使用Reader和Writer流类
+
+## 10.4 文件的处理与随机访问
+
+# 11 多线程
+
+## 11.1 线程的概念
+
+## 11.2 Java的Thread线程类与Runnable接口
+
+## 11.3 多线程的同步控制
+
+## 11.4 线程之间的通信
