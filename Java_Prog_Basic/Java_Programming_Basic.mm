@@ -111,7 +111,8 @@
 </node>
 </node>
 </node>
-<node TEXT="引用数据类型 reference types" FOLDED="true" ID="ID_1439177581" CREATED="1731759041306" MODIFIED="1731759052430">
+<node TEXT="引用数据类型 reference types" ID="ID_1439177581" CREATED="1731759041306" MODIFIED="1731814974732">
+<arrowlink DESTINATION="ID_13141947"/>
 <node TEXT="简称引用类型" ID="ID_1894243173" CREATED="1731759137177" MODIFIED="1731759147516"/>
 <node TEXT="在内存中存放的是指向该数据的地址，不是数据值本身" ID="ID_963162230" CREATED="1731759150660" MODIFIED="1731759178693"/>
 <node TEXT="往往由多个基本数据类型组成，所以对引用数据类型的应用称为对象应用，引用数据类型也被称为复合数据类型，在有的程序设计语言中称为指针" ID="ID_1789025753" CREATED="1731759179211" MODIFIED="1731759240320"/>
