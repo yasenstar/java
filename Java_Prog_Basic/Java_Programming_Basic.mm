@@ -1,20 +1,24 @@
-<map version="freeplane 1.11.5">
+<map version="freeplane 1.12.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="Java Programming Basic&#xa;Java程序设计基础(第6版)" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1731744931834"><hook NAME="MapStyle" background="#f5f5dc">
-    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" fit_to_viewport="false" associatedTemplateLocation="template:/light_sepia_template.mm"/>
+<node TEXT="Java Programming Basic&#xa;Java程序设计基础(第6版)" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1731744931834"><hook NAME="MapStyle" background="#f5f5dcff">
+    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sepia_template.mm" fit_to_viewport="false" show_tags="UNDER_NODES"/>
+    <tags category_separator="::"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_1558627382" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#2c2b29" BACKGROUND_COLOR="#eedfcc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="8 pt" SHAPE_VERTICAL_MARGIN="5 pt" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="true" BORDER_COLOR="#f0f0f0" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="3 pt">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1558627382" STARTINCLINATION="81.6 pt;-10.8 pt;" ENDINCLINATION="81.6 pt;19.8 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1558627382" STARTINCLINATION="81.75 pt;-9.75 pt;" ENDINCLINATION="81.75 pt;19.5 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="SansSerif" SIZE="9" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="bezier" COLOR="#2e3440" WIDTH="3" DASH="SOLID"/>
 <richcontent TYPE="DETAILS" CONTENT-TYPE="plain/auto"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="plain/auto"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.details" COLOR="#ffffff" BACKGROUND_COLOR="#2e3440">
+<font SIZE="10"/>
+</stylenode>
+<stylenode LOCALIZED_TEXT="defaultstyle.tags">
 <font SIZE="10"/>
 </stylenode>
 <stylenode LOCALIZED_TEXT="defaultstyle.attributes">
@@ -119,7 +123,7 @@
 </node>
 </node>
 </node>
-<node TEXT="3.2 关键字与标识符" FOLDED="true" ID="ID_311414545" CREATED="1731745254418" MODIFIED="1731745263757">
+<node TEXT="3.2 关键字与标识符" ID="ID_311414545" CREATED="1731745254418" MODIFIED="1731745263757">
 <node TEXT="3.2.1 关键字 keyword" FOLDED="true" ID="ID_1923347401" CREATED="1731761037274" MODIFIED="1731761063374">
 <node TEXT="Java语言中被赋予特定含义的一些单词，它们在程序中有着不同的用途，因此Java语言不允许用户对关键字赋予其他的含义" ID="ID_1012003003" CREATED="1731761077949" MODIFIED="1731761081858"/>
 </node>
@@ -138,14 +142,14 @@
 </node>
 </node>
 </node>
-<node TEXT="3.3 常量" FOLDED="true" ID="ID_1521371345" CREATED="1731745263907" MODIFIED="1731745266988">
+<node TEXT="3.3 常量" ID="ID_1521371345" CREATED="1731745263907" MODIFIED="1731745266988">
 <node TEXT="3.3.1 整型常量" ID="ID_484940537" CREATED="1731761434759" MODIFIED="1731761440966"/>
 <node TEXT="3.3.2 浮点型常量" ID="ID_1549036132" CREATED="1731761736758" MODIFIED="1731761747982"/>
 <node TEXT="3.3.3 布尔型常量" ID="ID_1391322442" CREATED="1731761748616" MODIFIED="1731761762231"/>
 <node TEXT="3.3.4 字符型常量" ID="ID_565050984" CREATED="1731761762749" MODIFIED="1731761769566"/>
 <node TEXT="3.3.5 字符串常量" ID="ID_1214867831" CREATED="1731761773908" MODIFIED="1731761779912"/>
-<node TEXT="3.3.6 常量的声明" FOLDED="true" ID="ID_23256983" CREATED="1731761781029" MODIFIED="1731761789287">
-<node TEXT="关键字 final" FOLDED="true" ID="ID_1001357462" CREATED="1731761789290" MODIFIED="1731761799760">
+<node TEXT="3.3.6 常量的声明" ID="ID_23256983" CREATED="1731761781029" MODIFIED="1731761789287">
+<node TEXT="关键字 final" ID="ID_1001357462" CREATED="1731761789290" MODIFIED="1731761799760">
 <node TEXT="e.g. final int MAX = 10;" ID="ID_850248350" CREATED="1731761799762" MODIFIED="1731761876662"/>
 <node TEXT="e.g. final float PI = 3.14f;" ID="ID_895957963" CREATED="1731761811279" MODIFIED="1731761821423"/>
 </node>
