@@ -1,7 +1,7 @@
 <map version="freeplane 1.12.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="Java Programming Basic&#xa;Java程序设计基础(第6版)" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1731744931834"><hook NAME="MapStyle" background="#f5f5dcff">
-    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_note_icons="true" associatedTemplateLocation="template:/light_sepia_template.mm" fit_to_viewport="false" show_tags="UNDER_NODES"/>
+    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_tags="UNDER_NODES" show_note_icons="true" associatedTemplateLocation="template:/light_sepia_template.mm" fit_to_viewport="false" showTagCategories="false"/>
     <tags category_separator="::"/>
 
 <map_styles>
@@ -9,7 +9,7 @@
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="bottom_or_right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_1558627382" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#2c2b29" BACKGROUND_COLOR="#eedfcc" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="8 pt" SHAPE_VERTICAL_MARGIN="5 pt" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="true" BORDER_COLOR="#f0f0f0" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="3 pt">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1558627382" STARTINCLINATION="81.75 pt;-9.75 pt;" ENDINCLINATION="81.75 pt;19.5 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#000000" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_1558627382" STARTINCLINATION="81.75 pt;-9 pt;" ENDINCLINATION="81.75 pt;19.5 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="SansSerif" SIZE="9" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="bezier" COLOR="#2e3440" WIDTH="3" DASH="SOLID"/>
 <richcontent TYPE="DETAILS" CONTENT-TYPE="plain/auto"/>
@@ -80,7 +80,7 @@
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <font BOLD="true"/>
-<node TEXT="03 Java语言基础" POSITION="bottom_or_right" ID="ID_1073260362" CREATED="1731744971938" MODIFIED="1731744981682">
+<node TEXT="03 Java语言基础" FOLDED="true" POSITION="bottom_or_right" ID="ID_1073260362" CREATED="1731744971938" MODIFIED="1731744981682">
 <node TEXT="3.1 数据类型 Data Type" FOLDED="true" ID="ID_1134281790" CREATED="1731745249507" MODIFIED="1731759009452">
 <node TEXT="数据存储在内存的一块空间中，为了取得数据，必须知道这块内存空间的位置，为了方便使用，程序设计语言用变量名来代表该数据存储空间的位置" FOLDED="true" ID="ID_959040603" CREATED="1731758942914" MODIFIED="1731758945806">
 <node TEXT="将数据指定给变量，就是将数据存储到对应的内存空间" ID="ID_95093482" CREATED="1731758958282" MODIFIED="1731758958282"/>
@@ -206,7 +206,7 @@
 </node>
 </node>
 </node>
-<node TEXT="方式2：Scanner" FOLDED="true" ID="ID_671586291" CREATED="1731811537879" MODIFIED="1731811554138">
+<node TEXT="方式2：Scanner" ID="ID_671586291" CREATED="1731811537879" MODIFIED="1731811554138">
 <node TEXT="App3_6: 输入多个数据" ID="ID_1450584656" CREATED="1731811577161" MODIFIED="1731811626694">
 <icon BUILTIN="executable"/>
 </node>
@@ -215,7 +215,7 @@
 </node>
 </node>
 </node>
-<node TEXT="3.7 运算符与表达式" FOLDED="true" ID="ID_1501616638" CREATED="1731745285163" MODIFIED="1731745291029">
+<node TEXT="3.7 运算符与表达式" ID="ID_1501616638" CREATED="1731745285163" MODIFIED="1731745291029">
 <node TEXT="3.7.1 算术运算符" FOLDED="true" ID="ID_413148118" CREATED="1731812227013" MODIFIED="1731812235479">
 <node TEXT="二元算术运算符" ID="ID_1090184850" CREATED="1731812250752" MODIFIED="1731812261056"/>
 <node TEXT="一元算术运算符" ID="ID_1503482688" CREATED="1731812261223" MODIFIED="1731812268023"/>
@@ -250,19 +250,81 @@
 </node>
 </node>
 </node>
-<node TEXT="04 流程控制" FOLDED="true" POSITION="bottom_or_right" ID="ID_526792072" CREATED="1731744981926" MODIFIED="1731744988248">
-<node TEXT="4.1 语句与复合语句" ID="ID_181989743" CREATED="1731745296274" MODIFIED="1731745305750"/>
+<node TEXT="04 流程控制" POSITION="bottom_or_right" ID="ID_526792072" CREATED="1731744981926" MODIFIED="1731744988248">
+<node TEXT="4.1 语句与复合语句" ID="ID_181989743" CREATED="1731745296274" MODIFIED="1731745305750">
+<node TEXT="简单语句：以分号“；”结尾的语句" ID="ID_1996530662" CREATED="1732286832896" MODIFIED="1732286863659"/>
+<node TEXT="复合语句：由一对花括号括起来的若干条简单语句" ID="ID_1788265574" CREATED="1732286863819" MODIFIED="1732286889573"/>
+<node TEXT="注释" ID="ID_620857091" CREATED="1732286890248" MODIFIED="1732286904203">
+<node TEXT="单行注释：以//开头，至该行行尾" ID="ID_1642600022" CREATED="1732286904206" MODIFIED="1732289172415">
+<arrowlink DESTINATION="ID_385231576"/>
+</node>
+<node TEXT="多行注释：以/*开头，以*/结束" ID="ID_383702646" CREATED="1732286932087" MODIFIED="1732286954021">
+<node TEXT="info that a developer modifying a class needs to know go into a normal comment (block or line)" ID="ID_385231576" CREATED="1732289136702" MODIFIED="1732289179882"/>
+</node>
+<node TEXT="文件注释：以/**开头，以*/结尾" ID="ID_708386409" CREATED="1732286954499" MODIFIED="1732286973983">
+<node TEXT="javadoc [filename].java" ID="ID_95734298" CREATED="1732288999711" MODIFIED="1732289010339"/>
+<node TEXT="info that the user of a class needs to know should go into a Javadoc comment" ID="ID_992047775" CREATED="1732289175070" MODIFIED="1732289197231"/>
+</node>
+</node>
+</node>
 <node TEXT="4.2 顺序结构" ID="ID_777790780" CREATED="1731745305924" MODIFIED="1731745310271"/>
 <node TEXT="4.3 分支结构" ID="ID_740745694" CREATED="1731745310412" MODIFIED="1731745316550">
 <node TEXT="4.3.1 if条件语句" ID="ID_1704775806" CREATED="1731812740675" MODIFIED="1731812748012">
-<node TEXT="App_4_1 找出三个整数中的最大值和最小值" ID="ID_1239926996" CREATED="1731812763505" MODIFIED="1731812795178">
+<node TEXT="App4_1 找出三个整数中的最大值和最小值" ID="ID_1239926996" CREATED="1731812763505" MODIFIED="1732287038018">
+<icon BUILTIN="executable"/>
+</node>
+<node TEXT="App4_2 给出分数的分档" ID="ID_1561079173" CREATED="1732287021643" MODIFIED="1732287064513">
 <icon BUILTIN="executable"/>
 </node>
 </node>
-<node TEXT="4.3.2 switch选择语句" ID="ID_1390301541" CREATED="1731812817379" MODIFIED="1731812826228"/>
+<node TEXT="4.3.2 switch选择语句" ID="ID_1390301541" CREATED="1731812817379" MODIFIED="1731812826228">
+<node TEXT="App4_3 判断用户从键盘输入的运算符，输出计算结果" ID="ID_390789322" CREATED="1732287076434" MODIFIED="1732287110889">
+<icon BUILTIN="executable"/>
 </node>
-<node TEXT="4.4 循环结构" ID="ID_1057152697" CREATED="1731745316716" MODIFIED="1731745321790"/>
-<node TEXT="4.5 循环中的跳转语句" ID="ID_279565150" CREATED="1731745321941" MODIFIED="1731745332814"/>
+<node TEXT="App4_4 输入一个月份，判断该月份的天数" ID="ID_1750732448" CREATED="1732287114914" MODIFIED="1732287156064">
+<icon BUILTIN="executable"/>
+</node>
+</node>
+</node>
+<node TEXT="4.4 循环结构" FOLDED="true" ID="ID_1057152697" CREATED="1731745316716" MODIFIED="1731745321790">
+<node TEXT="4.4.1 while语句" ID="ID_616630218" CREATED="1732287166297" MODIFIED="1732287184694">
+<node TEXT="App4_5 斐波那契数列" ID="ID_343755803" CREATED="1732287192937" MODIFIED="1732287215402">
+<icon BUILTIN="executable"/>
+</node>
+<node TEXT="App4_6 判断一个数是否是斐波那契数列中的数" ID="ID_1571208406" CREATED="1732287219236" MODIFIED="1732287253741">
+<icon BUILTIN="executable"/>
+</node>
+<node TEXT="App4_7 hasNextXXX() and nextXXX()配合键盘输入" ID="ID_1340472129" CREATED="1732287259339" MODIFIED="1732287317466">
+<icon BUILTIN="executable"/>
+</node>
+</node>
+<node TEXT="4.4.2 do-while语句" ID="ID_126322769" CREATED="1732287324174" MODIFIED="1732287329838">
+<node TEXT="App4_8 计算1+2+...+n的结果并输出" ID="ID_1267673381" CREATED="1732287334265" MODIFIED="1732287367351">
+<icon BUILTIN="executable"/>
+</node>
+<node TEXT="App4_9 求最大公约数" ID="ID_1062656142" CREATED="1732287371048" MODIFIED="1732287392097">
+<icon BUILTIN="executable"/>
+</node>
+<node TEXT="App4_10 已知s=n！，其中n为正整数，从键盘上任意输入一个大于1的整数m，求满足s＜m时的最大s及此时的n，并输出s和n的值" ID="ID_1761414936" CREATED="1732287398577" MODIFIED="1732287442673">
+<icon BUILTIN="executable"/>
+</node>
+</node>
+<node TEXT="4.4.3 for语句" ID="ID_44791199" CREATED="1732287447727" MODIFIED="1732287454233">
+<node TEXT="App4_11 求1~100的累加和" ID="ID_206773983" CREATED="1732287460596" MODIFIED="1732287480150">
+<icon BUILTIN="executable"/>
+</node>
+</node>
+<node TEXT="4.4.4 多重循环" ID="ID_1358697378" CREATED="1732287486552" MODIFIED="1732287492825">
+<node TEXT="App4_12 求100以内的素数" ID="ID_1729056857" CREATED="1732287494327" MODIFIED="1732287514119">
+<icon BUILTIN="executable"/>
+</node>
+</node>
+</node>
+<node TEXT="4.5 循环中的跳转语句" FOLDED="true" ID="ID_279565150" CREATED="1731745321941" MODIFIED="1731745332814">
+<node TEXT="4.5.1 break语句" ID="ID_1294757480" CREATED="1732287523777" MODIFIED="1732287529770"/>
+<node TEXT="4.5.2 continue语句" ID="ID_487288023" CREATED="1732287533142" MODIFIED="1732287539063"/>
+<node TEXT="4.5.3 return语句" ID="ID_1622159208" CREATED="1732287541988" MODIFIED="1732287552397"/>
+</node>
 </node>
 <node TEXT="05 数组与字符串" FOLDED="true" POSITION="bottom_or_right" ID="ID_1430312993" CREATED="1731744988399" MODIFIED="1731744997145">
 <node TEXT="5.1 数组的基本概念" ID="ID_13141947" CREATED="1731745336708" MODIFIED="1731745341182"/>
