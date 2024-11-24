@@ -7,12 +7,12 @@ public class App3_8 {
      */
     /**
      * this is a doc comment
-     * @param https://www.bing.com
      * @author  Yasen Zhao
      * @author  Friends
      * @version %I%, %G%
+     * @param   a   integer
+     * @param   b   another integer
      * @since   1.0
-     * @return  <code>true</code>
      */
     public static void main(String[] args) {
         int a=25, b=7;
