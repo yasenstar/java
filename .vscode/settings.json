@@ -1,3 +1,9 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        ".",
+        "Java_Prog_Basic\\01_Java-Overview",
+        "test"
+    ],
+    "java.project.referencedLibraries": []
 }
