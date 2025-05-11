@@ -8,7 +8,7 @@ This folder contains the code for the book "Java程序设计基础（第6版）"
 
 ## 课程思维导图
 
-[课程思维导图](Java_Programming_Basic.mm)
+[![课程思维导图](img/mm-image.png)](Java_Programming_Basic.mm)
 
 ## 课程视频
 
