@@ -1,6 +1,6 @@
 <map version="freeplane 1.12.1">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="Java Programming Basic&#xa;Java程序设计基础(第6版)" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1731744931834"><hook NAME="MapStyle" background="#f5f5dcff" zoom="2.1435893">
+<node TEXT="Java Programming Basic&#xa;Java程序设计基础(第6版)" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1090958577" CREATED="1409300609620" MODIFIED="1731744931834"><hook NAME="MapStyle" background="#f5f5dcff" zoom="1.21">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_tags="UNDER_NODES" show_note_icons="true" associatedTemplateLocation="template:/light_sepia_template.mm" fit_to_viewport="false" show_icons="BESIDE_NODES" showTagCategories="false"/>
     <tags category_separator="::"/>
 
@@ -82,7 +82,7 @@
 <font BOLD="true"/>
 <node TEXT="05 数组与字符串" POSITION="bottom_or_right" ID="ID_1430312993" CREATED="1731744988399" MODIFIED="1731744997145">
 <node TEXT="5.1 数组的基本概念" ID="ID_13141947" CREATED="1731745336708" MODIFIED="1731745341182"/>
-<node TEXT="5.2 一维数组" ID="ID_1911555188" CREATED="1731745341339" MODIFIED="1731745346342">
+<node TEXT="5.2 一维数组" FOLDED="true" ID="ID_1911555188" CREATED="1731745341339" MODIFIED="1731745346342">
 <node TEXT="5.2.1 一维数组的定义" ID="ID_618868888" CREATED="1732348218513" MODIFIED="1732348234870">
 <node TEXT="数组类型[] 数组名;&#xa;数组名 = new 数字类型[个数];" ID="ID_800503230" CREATED="1732348253763" MODIFIED="1732348289281"/>
 </node>
@@ -116,7 +116,7 @@
 </node>
 </node>
 </node>
-<node TEXT="5.5 字符串" ID="ID_413807483" CREATED="1731745363341" MODIFIED="1731745368230">
+<node TEXT="5.5 字符串" FOLDED="true" ID="ID_413807483" CREATED="1731745363341" MODIFIED="1731745368230">
 <node TEXT="5.5.1 字符串变量的创建" ID="ID_462128727" CREATED="1732348594168" MODIFIED="1732348603268"/>
 <node TEXT="5.5.2 String类的常用方法" ID="ID_1255129045" CREATED="1732348613165" MODIFIED="1732348629050">
 <node TEXT="App5_6 判断回文字符串" ID="ID_1065764892" CREATED="1732348633700" MODIFIED="1732348664212">
@@ -303,12 +303,6 @@
 <node TEXT="18.1 网络基础" ID="ID_1239866921" CREATED="1731745965047" MODIFIED="1731745971220"/>
 <node TEXT="18.2 URL编程" ID="ID_1134490325" CREATED="1731745971360" MODIFIED="1731745975723"/>
 <node TEXT="18.3 用Java语言实现底层网络通信" ID="ID_27428674" CREATED="1731745976095" MODIFIED="1731745993635"/>
-</node>
-<node TEXT="10 Java语言的输入输出与文件处理" FOLDED="true" POSITION="bottom_or_right" ID="ID_491160126" CREATED="1731745039576" MODIFIED="1731745054698">
-<node TEXT="10.1 Java语言的输入输出" ID="ID_78607880" CREATED="1731745521838" MODIFIED="1731745528736"/>
-<node TEXT="10.2 使用InputStream和OutputStream流类" ID="ID_1338040524" CREATED="1731745528885" MODIFIED="1731745542328"/>
-<node TEXT="10.3 使用Reader和Writer流类" ID="ID_978431593" CREATED="1731745542493" MODIFIED="1731745554914"/>
-<node TEXT="10.4 文件的处理与随机访问" ID="ID_791933859" CREATED="1731745555069" MODIFIED="1731745564039"/>
 </node>
 <node TEXT="01 Java语言概述" FOLDED="true" POSITION="top_or_left" ID="ID_1495149193" CREATED="1731744934915" MODIFIED="1731744964257">
 <node TEXT="1.1 Java语言的诞生与发展" ID="ID_241682195" CREATED="1731745168384" MODIFIED="1731745177909"/>
@@ -640,6 +634,12 @@
 <node TEXT="4.5.2 continue语句" ID="ID_487288023" CREATED="1732287533142" MODIFIED="1732287539063"/>
 <node TEXT="4.5.3 return语句" ID="ID_1622159208" CREATED="1732287541988" MODIFIED="1732287552397"/>
 </node>
+</node>
+<node TEXT="10 Java语言的输入输出与文件处理" FOLDED="true" POSITION="bottom_or_right" ID="ID_491160126" CREATED="1731745039576" MODIFIED="1731745054698">
+<node TEXT="10.1 Java语言的输入输出" ID="ID_78607880" CREATED="1731745521838" MODIFIED="1731745528736"/>
+<node TEXT="10.2 使用InputStream和OutputStream流类" ID="ID_1338040524" CREATED="1731745528885" MODIFIED="1731745542328"/>
+<node TEXT="10.3 使用Reader和Writer流类" ID="ID_978431593" CREATED="1731745542493" MODIFIED="1731745554914"/>
+<node TEXT="10.4 文件的处理与随机访问" ID="ID_791933859" CREATED="1731745555069" MODIFIED="1731745564039"/>
 </node>
 </node>
 </map>
