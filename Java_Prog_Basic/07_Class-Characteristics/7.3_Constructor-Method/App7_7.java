@@ -22,11 +22,24 @@ class Cylinder {
         System.out.println("圆柱体的颜色 = " + color);
     }
 
+    void area() {
+        System.out.println("底面积 = " + pi * radius * radius);
+    }
+
+    void volume() {
+        System.out.println("体积 = " + pi * radius * radius * height);
+    }
+
 }
 
 public class App7_7 {
     public static void main(String[] args) {
         Cylinder volu = new Cylinder(2.5, 5.5, "蓝色");
         volu.show();
+        volu.area();
+        volu.volume();
+        Cylinder volu1 = new Cylinder(3.2, 8.5, "黄色");
+        volu1.show();
+        volu1.volume();
     }
 }
