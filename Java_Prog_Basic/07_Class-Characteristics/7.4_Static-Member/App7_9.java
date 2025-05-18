@@ -8,7 +8,7 @@ class Cylinder {
 
     static {
         num = 100;
-        System.out.println("静态初始化器被调用了，num的初始值 = " + num);
+        System.out.println("静态初始化器被调用了, num的初始值 = " + num);
     }
 
     static {
