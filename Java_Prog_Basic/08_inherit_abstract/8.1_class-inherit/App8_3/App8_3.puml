@@ -1,0 +1,21 @@
+@startuml
+
+title access superclass' member from subclass
+
+class Person {
+    # String name
+    # int age
+    + Person()
+    + Person(String name, int age)
+    # void show()
+}
+
+class Student {
+    - String department
+    int age = 20
+    + Student(String xn, int a, String dep)
+}
+
+Person <|-- Student
+
+@enduml
