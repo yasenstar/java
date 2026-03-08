@@ -1,0 +1,18 @@
+@startuml
+class Person {
+    - String name
+    - int age
+    + Person()
+    + void setNameAge(String name, int age)
+    + void show()
+}
+
+class Student {
+    - String department
+    + Student()
+    + void setDepartment(String dep)
+}
+
+Person <|-- Student
+    
+@enduml

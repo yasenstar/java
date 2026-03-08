@@ -6,6 +6,8 @@ This folder contains the code for the book "Java程序设计基础（第6版）"
 
 [![清华大学出版社](img/book_8th.jpg)](http://tup.tsinghua.edu.cn/bookscenter/book_10178901.html)
 
+本课程参考微信读书中上架的第6版电子版本进行演示。
+
 ## 课程思维导图
 
 [![课程思维导图](img/mm-image.png)](Java_Programming_Basic.mm)
