@@ -1,0 +1,19 @@
+@startuml
+class Person {
+    # String name
+    # int age
+    + Person()
+    + Person(String name, int age)
+    # void show()
+}
+
+class Student extends Person {
+    - String department
+    + Student()
+    + Student(String name, int age, String dep)
+    # void show()
+}
+
+Student::show -> Person::show : overriding
+
+@enduml

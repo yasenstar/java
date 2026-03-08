@@ -17,6 +17,7 @@ This folder contains the code for the book "Java程序设计基础（第6版）"
 | 第一部分（1~7章）| 第二部分（8~13章）| 第三部分（14~18章）|
 | --- | --- | --- |
 | [<img src="img/udemy_part1.png" alt="part1" width="250">](https://www.udemy.com/course/java-prog-basic/?referralCode=A55023FBA76D632FCAD3)<br>点击上图加入学习 | <img src="img/udemy_part2.png" alt="part2" width="250"><br>第二部分，准备中... | <img src="img/udemy_part3.png" alt="part3" width="250"><br>第三部分，敬请期待... |
+| | - [第八章](./08_inherit_abstract/README.md) |
 
 ## 课程视频分享（持续更新）
 
